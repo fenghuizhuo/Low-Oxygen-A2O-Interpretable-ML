@@ -1,0 +1,299 @@
+{
+  "manifest_version": 2,
+  "script_count": 14,
+  "source_package_used": "Low_Oxygen_A2O_GitHub_Code_Package.zip",
+  "additional_source": "粘贴的文本 (1)(2).txt",
+  "files": [
+    {
+      "order": 1,
+      "source": "粘贴的文本 (1).txt",
+      "file": "01_outlier_preprocessing.py",
+      "desc": "数据清洗：固定边界与3×IQR",
+      "lines": 1268,
+      "source_sha256": "a558d6fb83c73c3a999b8a9cf8fbf885545f2a01fe03054911030c89d680f0c2",
+      "public_sha256": "690c68dc14076244a847ddb71925343a66e72f1167d23806aee940688618ce00",
+      "path_replacements": [
+        {
+          "portable": "data/raw/数据总表.xlsx"
+        },
+        {
+          "portable": "outputs/preprocessing/outlier"
+        }
+      ],
+      "doc_updates": 2
+    },
+    {
+      "order": 2,
+      "source": "粘贴的文本 (2).txt",
+      "file": "02_dynamic_samples_imputation.py",
+      "desc": "四目标动态样本和插补方法比较",
+      "lines": 1431,
+      "source_sha256": "f4f5b4b05ced8dc6d9140c7337da7d5d49bd98fabbd51adc13366e561e0289b6",
+      "public_sha256": "6116c6b7da0bd4709643118a69e9388a6a2782ac879e38a4c2bcfc3b3d547c02",
+      "path_replacements": [
+        {
+          "portable": "outputs/preprocessing/outlier/异常值处理结果.xlsx"
+        },
+        {
+          "portable": "outputs/preprocessing/dynamic"
+        }
+      ],
+      "doc_updates": 2
+    },
+    {
+      "order": 3,
+      "source": "粘贴的文本 (3).txt",
+      "file": "03_model_comparison_F0.py",
+      "desc": "F0: 原始特征、六算法比较",
+      "lines": 2066,
+      "source_sha256": "cf8ccadaa7a6c231e6ccfe576e8b601ac5c92643b9b42c8e85aaaae5fb3ae97d",
+      "public_sha256": "f4923b8c8024e87d840ad0a29f761261eb6fab0e219fc5bb7f011fcfce9960cc",
+      "path_replacements": [
+        {
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "portable": "outputs/model_comparison/F0"
+        }
+      ],
+      "doc_updates": 2
+    },
+    {
+      "order": 4,
+      "source": "粘贴的文本 (1)(1).txt",
+      "file": "04_model_comparison_F1.py",
+      "desc": "F1: 原始特征+机理衍生特征",
+      "lines": 2066,
+      "source_sha256": "18822dc65f451f71a71964ee5cd6b80f42744f5c922a86ee4625f494d6950f71",
+      "public_sha256": "40d8ce91b3d46f383c5bd22e97355ee16153ab0ce9e2b9ffee06425bbf3839e8",
+      "path_replacements": [
+        {
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "portable": "outputs/model_comparison/F1"
+        }
+      ],
+      "doc_updates": 2
+    },
+    {
+      "order": 5,
+      "source": "粘贴的文本 (2)(1).txt",
+      "file": "05_model_comparison_F2.py",
+      "desc": "F2: 原始特征+近期出水",
+      "lines": 2066,
+      "source_sha256": "4c54ac7fa55f5812534aff40b321c82e2c2d714c6e5262c31094fd94266da2e7",
+      "public_sha256": "0a711e577aee7fd0da4a893601e04b52179ba4d87b24b084f0ae99250afdc8d0",
+      "path_replacements": [
+        {
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "portable": "outputs/model_comparison/F2"
+        }
+      ],
+      "doc_updates": 2
+    },
+    {
+      "order": 6,
+      "source": "粘贴的文本 (3)(1).txt",
+      "file": "06_model_comparison_F3.py",
+      "desc": "F3: 全部特征",
+      "lines": 2066,
+      "source_sha256": "50c085b1a4d1e8c75c1519a3d01c6016bc5b7a3091022f8fba4d3324c65db25c",
+      "public_sha256": "93d0ee1bd9bddb90e245b5e7e20c0f2fb79ac7b50b7d4350b8e1f0ef845027f0",
+      "path_replacements": [
+        {
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "portable": "outputs/model_comparison/F3"
+        }
+      ],
+      "doc_updates": 2
+    },
+    {
+      "order": 7,
+      "source": "粘贴的文本 (4).txt",
+      "file": "07_final_model_selection.py",
+      "desc": "统一终选+随机稳定性复核",
+      "lines": 1936,
+      "source_sha256": "dc1a3fe5d5bfef9498974e019f4127e8a41337d657231bcac033207abf75e71a",
+      "public_sha256": "3f1906ab7f0cfd455ca4ba1e6142b7bbf38a20087ebccea4c7b1edaaa95799a8",
+      "path_replacements": [
+        {
+          "portable": "outputs/model_comparison"
+        },
+        {
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "portable": "outputs/final_selection"
+        }
+      ],
+      "doc_updates": 3
+    },
+    {
+      "order": 8,
+      "source": "粘贴的文本 (1)(2).txt",
+      "file": "08_final_model_freezing.py",
+      "desc": "四目标最终F2模型全量拟合、joblib固化与Excel/TXT记录",
+      "lines": 1146,
+      "source_sha256": "2999f79c437f4fdde9db1a9a3eb4ed4eb731fda3214fe44221b3fb2d6c16a03f",
+      "public_sha256": "2b6b2a9d1151627c052572b1f7e202765d11e9fcecd192c58c1702f5c76b33a5",
+      "path_replacements": [
+        {
+          "original": "D:\\tools\\pythonxiangmu\\moxingduibi\\jianmo\\zuizhongmoxingqueding\\F0-F3_统一终选与随机稳定性复核结果.xlsx",
+          "portable": "outputs/final_selection/F0-F3_统一终选与随机稳定性复核结果.xlsx"
+        },
+        {
+          "original": "D:\\tools\\pythonxiangmu\\moxingduibi\\shujuyuchuli\\queshizhichabu\\动态可用数据与插补比较结果.xlsx",
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "original": "D:\\tools\\pythonxiangmu\\moxingduibi\\jianmo\\zuizhongmoxingqueding\\moxingbaocun",
+          "portable": "outputs/final_selection/moxingbaocun"
+        }
+      ],
+      "doc_updates": 3
+    },
+    {
+      "order": 9,
+      "source": "粘贴的文本 (5).txt",
+      "file": "09_shap_permutation_importance.py",
+      "desc": "最终模型SHAP+PI解释",
+      "lines": 2703,
+      "source_sha256": "e3881a72c771fba0a8d06a3bdccd215c61b56f99092c24271c72e0acf50fb59b",
+      "public_sha256": "230602bfafdbb69b72f30aef62153e717ef63173974ba8022977e278e850cb7d",
+      "path_replacements": [
+        {
+          "portable": "outputs/final_selection/moxingbaocun"
+        },
+        {
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "portable": "outputs/interpretation/shap_pi"
+        }
+      ],
+      "doc_updates": 3
+    },
+    {
+      "order": 10,
+      "source": "粘贴的文本 (6).txt",
+      "file": "10_pdp_ice_1d.py",
+      "desc": "一维PDP/ICE分析",
+      "lines": 2202,
+      "source_sha256": "b25f7e8bd6057033c8060cf2206b90efc67c734f71d8fee6336e2c76f9ae7db3",
+      "public_sha256": "244282a544aa6d8375c94ea5fe793bc4af6304c2ab1e012603536ecd819a2145",
+      "path_replacements": [
+        {
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "portable": "outputs/final_selection/moxingbaocun"
+        },
+        {
+          "portable": "outputs/interpretation/shap_pi/四指标_SHAP与PermutationImportance综合结果.xlsx"
+        },
+        {
+          "portable": "outputs/response/one_dimensional"
+        }
+      ],
+      "doc_updates": 4
+    },
+    {
+      "order": 11,
+      "source": "粘贴的文本 (7).txt",
+      "file": "11_pdp_2d.py",
+      "desc": "二维PDP响应分析",
+      "lines": 2869,
+      "source_sha256": "90e3b24e4293d062881d5bc81654717fcd7366c62f812e57fbdfd965ed29c339",
+      "public_sha256": "58339d4bd411392b6d370abe2c10d82cafa50b231a410c7fc7405e2bd846cb6e",
+      "path_replacements": [
+        {
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "portable": "outputs/final_selection/moxingbaocun"
+        },
+        {
+          "portable": "outputs/interpretation/shap_pi/四指标_SHAP与PermutationImportance综合结果.xlsx"
+        },
+        {
+          "portable": "outputs/response/one_dimensional/四指标_一维PDP_ICE响应分析结果.xlsx"
+        },
+        {
+          "portable": "outputs/response/two_dimensional"
+        }
+      ],
+      "doc_updates": 5
+    },
+    {
+      "order": 12,
+      "source": "粘贴的文本 (8).txt",
+      "file": "12_joint_forward_prediction.py",
+      "desc": "联合参数正向预测与11份明细输出",
+      "lines": 2402,
+      "source_sha256": "ff88617f451401c935b6279787a8e804a55834d9878ede6cc2a7a46a3d42724e",
+      "public_sha256": "8395b17f4852f5451840da23321191180d191ded28c18474b4173b9edb194263",
+      "path_replacements": [
+        {
+          "portable": "outputs/preprocessing/dynamic/动态可用数据与插补比较结果.xlsx"
+        },
+        {
+          "portable": "outputs/final_selection/moxingbaocun"
+        },
+        {
+          "portable": "outputs/screening/forward"
+        }
+      ],
+      "doc_updates": 3
+    },
+    {
+      "order": 13,
+      "source": "粘贴的文本 (9).txt",
+      "file": "13_inverse_parameter_screening.py",
+      "desc": "四目标反向筛选和代表方案",
+      "lines": 1673,
+      "source_sha256": "c16760d839ecd97a218bb6115987f285e8124f692924856e1735d5ff01c9a670",
+      "public_sha256": "fd0bb0ed31e161ecca911de03e3a9cc56e0a123ce19b0f69a4c53fe92b0235a5",
+      "path_replacements": [
+        {
+          "portable": "outputs/screening/forward"
+        },
+        {
+          "portable": "outputs/screening/inverse"
+        }
+      ],
+      "doc_updates": 2
+    },
+    {
+      "order": 14,
+      "source": "粘贴的文本 (10).txt",
+      "file": "14_low_do_supplementary_screening.py",
+      "desc": "进水TP分层低DO筛选",
+      "lines": 1233,
+      "source_sha256": "df290c75154214b9435b495998968f25ee8736a2d4b0db9ff12c88af9550d615",
+      "public_sha256": "a3bebc7daa88b10e40fa2d6ffcbb00c3629a6efe517b26dd426bd244987e5fc9",
+      "path_replacements": [
+        {
+          "portable": "outputs/screening/inverse/四指标_目标出水反向优化结果.xlsx"
+        },
+        {
+          "portable": "outputs/screening/inverse/low_do"
+        }
+      ],
+      "doc_updates": 2
+    }
+  ],
+  "checks": {
+    "all_python_scripts_AST_compile": true,
+    "old_downstream_bytes_preserved": true,
+    "new_freezing_executable_source_roundtrip": true,
+    "first_step_input_file_default_corrected": true,
+    "downstream_model_artifact_contract_static": true,
+    "original_data_not_included": true,
+    "numeric_reproduction_performed": false
+  }
+}
