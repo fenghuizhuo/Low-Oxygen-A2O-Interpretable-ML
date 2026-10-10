@@ -1,0 +1,11 @@
+# Dependencies inferred from imports of all 14 supplied scripts.
+# Original exact package versions were NOT provided; this is not a lockfile.
+numpy
+pandas
+openpyxl
+scikit-learn
+xgboost
+joblib
+shap
+scipy
+xlsxwriter
